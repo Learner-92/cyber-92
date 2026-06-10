@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cyber-92 | Ethical Hacker & Security Researcher</title>
+  <meta name="description" content="Ethical hacker, CTF player, and cybersecurity researcher. Writeups, tools, and security research."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- SCAN LINE OVERLAY -->
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="logo" href="#"><span class="bracket">[</span>root@yourname<span class="blink">▮</span><span class="bracket">]</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#writeups">writeups</a></li>
+        <li><a href="#ctf">ctf</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="menu">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#writeups">writeups</a>
+      <a href="#ctf">ctf</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">// initializing connection...</p>
+      <h1 class="hero-title">
+        <span class="glitch" data-text="Cyber-92">Cyber-92</span>
+      </h1>
+      <div class="hero-terminal" id="terminalOutput"></div>
+      <div class="hero-badges">
+        <span class="badge">Ethical Hacker</span>
+        <span class="badge">CTF Player</span>
+        <span class="badge">Security Researcher</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#writeups" class="btn-primary">View Writeups</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-grid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> about_me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>cybersecurity enthusiast</strong> passionate about offensive security, vulnerability research, and making the web safer. I spend my time breaking things (ethically), writing CTF solutions, and sharing what I learn.</p>
+          <p>Currently focused on <strong>web application security</strong>, <strong>binary exploitation</strong>, and <strong>network penetration testing</strong>. Active on platforms like HackTheBox, TryHackMe, and PicoCTF.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num" data-target="50">0</span><span class="stat-label">CTFs Solved</span></div>
+            <div class="stat"><span class="stat-num" data-target="20">0</span><span class="stat-label">Writeups</span></div>
+            <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Tools Built</span></div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="term-bar"><span></span><span></span><span></span></div>
+          <div class="term-body">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="out">security_researcher</p>
+            <p><span class="prompt">$</span> cat interests.txt</p>
+            <p class="out">Web App Security</p>
+            <p class="out">Binary Exploitation</p>
+            <p class="out">Reverse Engineering</p>
+            <p class="out">OSINT</p>
+            <p class="out">Network Pentesting</p>
+            <p><span class="prompt">$</span> echo $STATUS</p>
+            <p class="out green">AVAILABLE_FOR_OPPORTUNITIES</p>
+            <p><span class="prompt">$</span> <span class="blink">▮</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> skill_set</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🔓</div>
+          <h3>Web Security</h3>
+          <div class="skill-tags">
+            <span>SQLi</span><span>XSS</span><span>SSRF</span><span>IDOR</span><span>XXE</span><span>RCE</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Bash</span><span>C</span><span>JavaScript</span><span>Go</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔬</div>
+          <h3>Reverse Engineering</h3>
+          <div class="skill-tags">
+            <span>Ghidra</span><span>IDA Pro</span><span>GDB</span><span>pwndbg</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Network Security</h3>
+          <div class="skill-tags">
+            <span>Wireshark</span><span>Nmap</span><span>Metasploit</span><span>Burp Suite</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔐</div>
+          <h3>Cryptography</h3>
+          <div class="skill-tags">
+            <span>RSA</span><span>AES</span><span>Hash Cracking</span><span>PGP</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🕵️</div>
+          <h3>OSINT</h3>
+          <div class="skill-tags">
+            <span>Maltego</span><span>Shodan</span><span>theHarvester</span><span>Recon-ng</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRITEUPS -->
+  <section id="writeups">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> writeups</h2>
+      <div class="writeup-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="pwn">Pwn</button>
+        <button class="filter-btn" data-filter="crypto">Crypto</button>
+        <button class="filter-btn" data-filter="forensics">Forensics</button>
+      </div>
+      <div class="writeup-grid" id="writeupGrid">
+        <article class="writeup-card" data-category="web">
+          <div class="card-meta"><span class="tag web">Web</span><span class="difficulty hard">Hard</span></div>
+          <h3>HTB: Escape — MSSQL to Domain Admin</h3>
+          <p>Exploiting MSSQL xp_cmdshell and NTLM relay to escalate privileges to Domain Admin on a Windows AD machine.</p>
+          <div class="card-footer"><span class="platform">HackTheBox</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+        <article class="writeup-card" data-category="pwn">
+          <div class="card-meta"><span class="tag pwn">Pwn</span><span class="difficulty medium">Medium</span></div>
+          <h3>Buffer Overflow — ret2libc Attack</h3>
+          <p>Defeating stack canaries and ASLR using ret2libc technique with ROP chains to pop a shell.</p>
+          <div class="card-footer"><span class="platform">CTF</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+        <article class="writeup-card" data-category="crypto">
+          <div class="card-meta"><span class="tag crypto">Crypto</span><span class="difficulty easy">Easy</span></div>
+          <h3>RSA — Small Public Exponent Attack</h3>
+          <p>Breaking RSA with e=3 using Coppersmith's attack when the plaintext is small relative to modulus.</p>
+          <div class="card-footer"><span class="platform">PicoCTF</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+        <article class="writeup-card" data-category="forensics">
+          <div class="card-meta"><span class="tag forensics">Forensics</span><span class="difficulty medium">Medium</span></div>
+          <h3>Memory Forensics — Volatility Deep Dive</h3>
+          <p>Extracting credentials, network connections, and malware artifacts from a Windows memory dump.</p>
+          <div class="card-footer"><span class="platform">TryHackMe</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+        <article class="writeup-card" data-category="web">
+          <div class="card-meta"><span class="tag web">Web</span><span class="difficulty easy">Easy</span></div>
+          <h3>SSRF to AWS Metadata — Cloud Exploit</h3>
+          <p>Using Server-Side Request Forgery to reach AWS IMDSv1 and steal IAM credentials from metadata service.</p>
+          <div class="card-footer"><span class="platform">HackTheBox</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+        <article class="writeup-card" data-category="pwn">
+          <div class="card-meta"><span class="tag pwn">Pwn</span><span class="difficulty hard">Hard</span></div>
+          <h3>Heap Exploitation — Tcache Poisoning</h3>
+          <p>Leveraging use-after-free vulnerability to poison tcache bins and achieve arbitrary write primitive.</p>
+          <div class="card-footer"><span class="platform">CTF</span><a href="#" class="read-link">Read →</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTF -->
+  <section id="ctf">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> ctf_achievements</h2>
+      <div class="ctf-platforms">
+        <div class="platform-card">
+          <div class="platform-logo htb">HTB</div>
+          <h3>HackTheBox</h3>
+          <p class="rank">Pro Hacker</p>
+          <div class="platform-stats">
+            <div><span>Rank</span><strong>#1,200</strong></div>
+            <div><span>Machines</span><strong>45</strong></div>
+            <div><span>Challenges</span><strong>30</strong></div>
+          </div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-logo thm">THM</div>
+          <h3>TryHackMe</h3>
+          <p class="rank">Top 5%</p>
+          <div class="platform-stats">
+            <div><span>Rank</span><strong>#8,500</strong></div>
+            <div><span>Rooms</span><strong>80</strong></div>
+            <div><span>Badges</span><strong>15</strong></div>
+          </div>
+        </div>
+        <div class="platform-card">
+          <div class="platform-logo pico">PICO</div>
+          <h3>PicoCTF</h3>
+          <p class="rank">Top 500</p>
+          <div class="platform-stats">
+            <div><span>Points</span><strong>9,200</strong></div>
+            <div><span>Solves</span><strong>62</strong></div>
+            <div><span>Year</span><strong>2024</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <h3 class="timeline-heading">Recent Competitions</h3>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2024</span>
+            <h4>Google CTF 2024</h4>
+            <p>Top 200 globally — Solved web & crypto challenges</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2024</span>
+            <h4>DEFCON CTF Quals</h4>
+            <p>Participated with team, solved 3 binary exploitation challenges</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-date">2023</span>
+            <h4>HTB University CTF</h4>
+            <p>Finished 45th — Full pwn category clear</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Open to bug bounty collaborations, security research, CTF teams, and internship opportunities. Let's connect.</p>
+          <div class="contact-links">
+            <a href="https://github.com/Learner-92" target="_blank" class="contact-link">
+              <span class="cl-icon">⌨</span> GitHub
+            </a>
+            <a href="https://twitter.com/Learner-92" target="_blank" class="contact-link">
+              <span class="cl-icon">🐦</span> Twitter / X
+            </a>
+            <a href="https://linkedin.com/in/Learner-92" target="_blank" class="contact-link">
+              <span class="cl-icon">🔗</span> LinkedIn
+            </a>
+            <a href="mailto:you@cyber-92.is-a.dev" class="contact-link">
+              <span class="cl-icon">✉</span> Email
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">$ name</label>
+            <input type="text" id="name" placeholder="cyber_92" required />
+          </div>
+          <div class="form-group">
+            <label for="email">$ email</label>
+            <input type="email" id="email" placeholder="you@domain.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">$ message</label>
+            <textarea id="message" rows="5" placeholder="your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message_</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-copy"><span class="accent">©</span> 2025 cyber-92.is-a.dev — Built with ☕ and vim</p>
+      <p class="footer-note">// Hack the planet. Responsibly.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
